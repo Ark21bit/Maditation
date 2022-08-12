@@ -318,5 +318,8 @@ header{
     .header__nav{
         display: none;
     }
+    .box_text_img{
+        flex-direction: column;
+    }
 }
 
