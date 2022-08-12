@@ -1,0 +1,322 @@
+.Prose {
+    display: grid;
+    grid-template-columns: [full-start] minmax(1em, 1fr) [main-start] minmax(0, 1620px) [main-end] minmax(1em, 1fr) [full-end];
+    grid-auto-rows: max-content;
+}
+
+.Prose > * {
+  grid-column: main;
+}
+
+.Prose-splash {
+    grid-column: full;
+}
+
+main{
+    flex-grow: 1;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {    
+    font-family: 'Heebo';
+    font-weight: 400;  
+    background: rgba(218, 243, 237, 1);    
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    resize: none;
+    background: none;
+}
+
+input {
+    font-family: inherit;
+}
+
+/* начало стилей */
+
+header{    
+    padding: 8px 0 3px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    max-width: 1620px;
+    padding: 0 20px;
+    margin: 0 auto;    
+    width: 100%;
+}
+
+.flex{
+    display: flex;    
+}
+
+.align_center{
+    align-items: center;
+}
+
+.direction_column{
+    flex-direction: column;
+}
+
+.justify_between{
+    justify-content: space-between
+}
+
+.btn_text_small{
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.btn_text{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 130%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.btn_primary{
+    padding: 12px 44px;
+    background: linear-gradient(180deg, #259385 0%, #159685 100%);
+    box-shadow: 0px 13px 28px rgba(26, 127, 114, 0.2);
+    border-radius: 30px;
+    transition: box-shadow .5s linear;
+}
+
+.btn_primary:hover{
+    box-shadow: 0px 13px 28px rgba(26, 127, 114, 1);
+}
+
+.bg1{
+    background-image: url(../img/background.svg);
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+.header__menu{
+    display: flex;
+    gap: 30px;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 41px;
+    color: #000000;  
+    align-items: center;
+}
+
+.header__menu .active{    
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 47px;
+    color: #1A7F72;
+}
+
+.menu__item{
+    transition: border .5s linear;
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+}
+
+.menu__item:hover{
+    border-bottom: 3px solid #000;    
+}
+
+.menu__item.active{
+    border-bottom: 3px solid #1a7f7200;    
+}
+
+.menu__item.active:hover{
+    border-bottom: 3px solid #1A7F72;
+}
+
+.header_bottom{
+    background: url(../img/BG_top.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header_bottom > div{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header_bottom h1{    
+    max-width: 760px;
+    margin: 70px 0 22px ;    
+}
+
+.header_bottom p{    
+    max-width: 1100px;
+}
+
+.header_bottom button{    
+    margin: 30px 0 70px;
+}
+
+.cards_3_box{
+    display: flex;    
+    padding: 120px 0 45px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    flex-basis: 420px;
+    padding: 50px 48px 92px;   
+    background-image: url(../img/Subtract.svg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    border-radius: 20px;    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    -webkit-filter: drop-shadow( 0px 19px 50px rgba(26, 127, 114, 0.15));
+    filter: drop-shadow(0px 19px 50px rgba(26, 127, 114, 0.15));
+    margin: 0 auto;
+}
+
+.card img{
+  width: 100px;
+}
+
+.card button{
+  margin-top: 40px;
+}
+
+.card_text{
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+}
+
+.box>h2{
+    max-width: 706px;
+    margin: 0 auto 22px;
+    text-align: center;
+}
+
+.box>p{
+    max-width: 1105px;
+    margin: 0 auto 70px;
+    text-align: center;
+}
+
+.card_text{    
+    max-width: 620px;
+    margin: 50px auto;
+}
+
+.card_text.active{
+    padding: 35px 58px 35px 40px;
+    background-image: url(../img/Subtract2.svg);
+    background-size: cover;   
+    -webkit-filter: drop-shadow( 0px 8px 50px rgba(26, 127, 114, 0.2));
+    filter: drop-shadow(0px 8px 50px rgba(26, 127, 114, 0.2));
+    box-sizing: content-box;
+    background-position: right;
+    border-radius: 15px;
+}
+
+.card_text .h3{
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.box_text_img{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    padding: 70px 0 80px;
+}
+
+.box_text_img>text{
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.box_text_img > .text:nth-of-type(odd){
+    order: -1;
+}
+
+.box_music{
+    display: flex;
+    flex-basis: 650px;        
+    padding: 30px 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.box_music .h3{
+    text-align: left;
+}
+
+.btn_play{
+    width: 80px;
+    height: 80px;
+    background: url(../img/Play.svg) , linear-gradient(180deg, #259385 0%, #159685 100%) padding-box,linear-gradient(180deg, rgba(230, 248, 245, 1), rgba(237, 251, 249, 1))  border-box;
+    box-shadow: 0px 25px 30px rgba(179, 228, 221, 0.3), 0px 9px 24px rgba(26, 127, 114, 0.23);    
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid transparent;
+    border-radius: 50%;
+}
+
+@media  (max-width:989px) {
+    .header__nav{
+        display: none;
+    }
+}
+
