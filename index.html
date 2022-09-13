@@ -95,24 +95,24 @@
                     <div class="text boxs_music">
                         <div class="box_music ">
                             <div class="text">
-                                <h3 class="h3">Turning off Auto Pilot</h3>
+                                <h3 class="h3">HAST</h3>
                                 <p class="body_text">Intriduction, Strees Assesment</p>
                             </div>
-                            <button class="btn_play"></button>
+                            <button class="btn_play" id="play1"></button>
                         </div>
                         <div class="box_music">
                             <div class="text">
-                                <h3 class="h3">Turning off Auto Pilot</h3>
+                                <h3 class="h3">INTER</h3>
                                 <p class="body_text">Intriduction, Strees Assesment</p>
                             </div>
-                            <button class="btn_play"></button>
+                            <button class="btn_play" id="play2"></button>
                         </div>
                         <div class="box_music">
                             <div class="text">
-                                <h3 class="h3">Turning off Auto Pilot</h3>
+                                <h3 class="h3">GIMN</h3>
                                 <p class="body_text">Intriduction, Strees Assesment</p>
                             </div>
-                            <button class="btn_play"></button>
+                            <button class="btn_play" id="play3"></button>
                         </div>
                     </div>
                     <div class="img">
@@ -140,5 +140,41 @@
     <footer>
 
     </footer>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        let music1 = new Audio("audio/Du_Hast.mp3");
+        let music2 = new Audio("audio/internazional.mp3");
+        let music3 = new Audio("audio/gimn.mp3");
+
+        $("#play1").click(function play(e) {            
+            if(!$(this).hasClass("active")){
+                $(this).addClass('active');  
+                music1.play(); 
+            }else{
+                $(this).removeClass('active');  
+                music1.pause(); 
+            }     
+        }); 
+
+        $("#play2").click(function play(e) {            
+            if(!$(this).hasClass("active")){
+                $(this).addClass('active');  
+                music2.play(); 
+            }else{
+                $(this).removeClass('active');  
+                music2.pause(); 
+            }     
+        }); 
+
+        $("#play3").click(function play(e) {            
+            if(!$(this).hasClass("active")){
+                $(this).addClass('active');  
+                music3.play(); 
+            }else{
+                $(this).removeClass('active');  
+                music3.pause(); 
+            }     
+        });
+    </script>
 </body>
 </html>

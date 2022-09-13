@@ -340,6 +340,13 @@ header{
     background-position: center;
     border: 3px solid transparent;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn_play.active{    
+    background: url(../img/stop.svg) , linear-gradient(180deg, #259385 0%, #159685 100%) padding-box,linear-gradient(180deg, rgba(230, 248, 245, 1), rgba(237, 251, 249, 1))  border-box;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .boxs_music{
