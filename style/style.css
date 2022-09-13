@@ -156,6 +156,13 @@ header{
     background-size: cover;
 }
 
+.bg3{
+    background-image: url(../img/background4.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .header__menu{
     display: flex;
     gap: 30px;
@@ -329,8 +336,6 @@ header{
     text-align: left;
 }
 
-
-
 .btn_play{
     width: 80px;
     height: 80px;
@@ -354,6 +359,31 @@ header{
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
+}
+
+.advantage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.advantage .text{
+    max-width: 600px;
+}
+
+.advantage .text{
+    
+}
+
+.advantage .text:first-child div{
+    background: linear-gradient(270deg, #C3EEE8 26.37%, rgba(195, 226, 222, 0.75) 63.87%, rgba(231, 243, 242, 0.4) 103.6%) padding-box;
+    
+    border: 1px solid transparent;
+    border-radius: 15px;
+    padding: 25px 35px;
+    text-align: right;
 }
 
 @media  (max-width:989px) {
