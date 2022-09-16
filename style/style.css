@@ -393,7 +393,7 @@ header{
     border-radius: 15px;
     padding: 1.5625rem 1.1875rem 1.5625rem 1.1875rem ;    
     max-width: 600px;
-    width: calc(50% - 30px);  
+    width: calc(50% - 1.875rem);  
 }
 
 .advantage .text div:nth-child(odd){ 
@@ -413,6 +413,11 @@ header{
 
     html{
         font-size: 14px;
+    }
+
+    .card_text{
+        margin: 1.025rem auto;
+        font-size: 1.5rem;
     }
 
     .header__nav{
@@ -458,7 +463,8 @@ header{
 @media  (max-width:649px) {
     html{
         font-size: 12px;
-    }
+    }    
+    
 }
 
 @media (max-width:400px) {
